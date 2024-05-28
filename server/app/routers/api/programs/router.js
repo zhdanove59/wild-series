@@ -6,11 +6,12 @@ const router = express.Router();
 // Define Your API Routes Here
 /* ************************************************************************* */
 
-const { browse } = require("../../../controllers/itemActions");
+// Import item-related actions
+const { browse } = require("../../../controllers/programActions");
 
 // Route to get a list of items
 router.get("/", browse);
-
+// router.get('/:id', read);
 /* ************************************************************************* */
 
 module.exports = router;
